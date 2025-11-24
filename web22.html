@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portofolio Olifia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="loading">
+    <div class="loader"></div>
+    <p>Memuat halaman...</p>
+</div>
+<body data-theme="light">
+
+<nav class="navbar">
+    <div class="nav-left">
+        <h2 class="logo">Olifia.</h2>
+        <button class="menu-toggle" aria-label="Buka menu">☰</button>
+    </div>
+
+    <ul class="nav-list">
+        <li class="nav-item" data-target="about">Tentang Aku</li>
+        <li class="nav-item" data-target="hobby">Hobi & Keseharian</li>
+        <li class="nav-item" data-target="quotes">Quotes</li>
+        <li class="nav-item" data-target="kritik">Kritik & Saran</li>
+        <li class="nav-item" data-target="kontak">Kontak</li>
+    </ul>
+
+    <button id="themeBtn" class="toggle-btn" aria-pressed="false">🌙 Dark</button>
+</nav>
+
+<main class="container">
+    <section id="about" class="page active">
+        <h1>Tentang Aku</h1>
+        <div class="card profile-card">
+            <div class="foto-wrap">
+                <img src="image.jpg/olifia.jpeg" alt="Foto Olifia">
+           
+            </div>
+            <div class="profile-info">
+                <p class="nama">Nama:</strong>Olifia Mathelda Helvena Ramat</p>
+                <p><strong>Umur:</strong> 17 tahun</p>
+                <p><strong>TTL:</strong> Balikpapan, 26 Oktober 2008</p>
+                <p><strong>Alamat:</strong> Jalan Pemuda</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobby" class="page">
+        <h1>Hobiku & Keseharianku</h1>
+        <div class="card grid">
+            <div class="box">
+                <h3>Hobiku</h3>
+                <ul>
+                    <li>📚 Tidur</li>
+                    <li>🧼 Mencuci piring</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Keseharianku</h3>
+                <ul>
+                    <li>🧽 Cuci piring</li>
+                    <li>😴 Tidur</li>
+                    <li>📱 Main HP</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="quotes" class="page">
+        <h1>Quotes Inspiratif</h1>
+        <div class="card quotes">
+            <p>“Jangan bandingkan perjalananmu dengan orang lain. Setiap bunga butuh waktunya sendiri untuk mekar.”</p>
+            <p>“Kamu tidak harus sempurna, cukup terus berkembang setiap hari.”</p>
+            <p>“Istirahat bukan berarti menyerah — itu seni merawat diri.”</p>
+        </div>
+    </section>
+
+    <section id="kritik" class="page">
+        <h1>Kritik & Saran</h1>
+        <div class="card">
+            <textarea id="pesan" placeholder="Tulis kritik & saran..." rows="4"></textarea>
+            <input id="namaPengirim" placeholder="Nama (opsional)" />
+            <div class="actions">
+                <button id="kirimBtn" class="primary">Kirim</button>
+            </div>
+            <h3>Pesan Terkirim:</h3>
+            <div id="listPesan" class="small"></div>
+        </div>
+    </section>
+
+    <section id="kontak" class="page">
+        <h1>Kontak</h1>
+        <div class="card contact-card">
+            <p>✉️ Email: <a href="mailto:olifiamathelda@student.yosda.sch.id">olifiamathelda@student.yosda.sch.id</a></p>
+            <p>📸 Instagram: <a href="https://instagram.com/sigmagirlintown" target="_blank">@sigmagirlintown</a></p>
+            <p>📞 Telepon: <a href="tel:082344896131">0823-4489-6131</a></p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© Olifia • Dibuat dengan sederhana</p>
+</footer>
+
+<div id="toast" class="toast hide"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
